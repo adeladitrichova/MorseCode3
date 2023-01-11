@@ -78,11 +78,16 @@ namespace ConsoleApp1
         {
             text = text.ToUpper();
             StringBuilder sb = new StringBuilder();
-            foreach (char c in text)
+            for (int i = 0; i < text.Length; i++)
             {
-                if (_encodeDictionary.ContainsKey(c.ToString()))
+                if (text[i] == 'C' && i + 1 < text.Length && text[i + 1] == 'H')
                 {
-                    sb.Append(_encodeDictionary[c.ToString()] + "/");
+                    sb.Append(_encodeDictionary["CH"] + "/");
+                    i++;
+                }
+                else if (_encodeDictionary.ContainsKey(text[i].ToString()))
+                {
+                    sb.Append(_encodeDictionary[text[i].ToString()] + "/");
                 }
             }
             return sb.ToString().Trim();
