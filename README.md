@@ -12,10 +12,11 @@ Po spuštění konzole je možné zvolit ze 3 možností, pomocí zadání čís
 
 2 - Decode
   Spustí program, který přeloží zadaný kód z Morseovy abecedy na text. 
-  Je nutné jednotlivé písmena oddělovat "/" a slova mezerou, například: -.../.-../.-/-.-./-.-/ /-.-./.-/-/ (black cat).
+  Je nutné jednotlivé písmena oddělovat "/" a slova mezerou, například: 
+  
+    -.../.-../.-/-.-./-.-/ /-.-./.-/-/ (black cat).
   Output programu bude přeložený kód do textu.
   
   Poznámky:
     CH je řešeno jako nový znak "----".
-    
     Nemám ráda Morseovku.
