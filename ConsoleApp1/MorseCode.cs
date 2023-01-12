@@ -95,7 +95,7 @@ namespace ConsoleApp1
 
         public string Decode(string code)
         {
-            string[] words = code.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] words = code.Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
             StringBuilder sb = new StringBuilder();
             foreach (string word in words)
             {
